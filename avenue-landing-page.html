@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>landing page</title>
+   <link rel="stylesheet" href="/css/all.min.css">
+
+
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+      @font-face {
+         font-family:Montserrat-Regular ;
+         src: url('./assets/Custome-font/static/Montserrat-Regular.ttf');
+      }
+      @font-face {
+         font-family:Montserrat-Bold ;
+         src: url('./assets/Custome-font/static/Montserrat-Bold.ttf');
+      }
+      .layout-header {
+         margin: auto;
+      }
+      .header1-outer {
+         margin: auto;
+         background-color: #333333;
+      }
+      .header1-container {
+         width: 800px;
+         margin-left: auto;
+         margin-right: auto;
+
+      }
+      div.currency {
+         display: inline-block;
+         padding: 9.5px 10px;
+         font-size: 13px;
+         color: #777777;
+         font-family:Montserrat-Regular;
+
+      }
+      .select1 {
+         border: none;
+         background-color: #333333;
+         color: #777777;
+      }
+      div.header1-sign-in {
+         display:block;
+         float: right;
+         padding: 10px 50px;
+         font-size: 13px;
+         font-family:Montserrat-Regular;
+      }
+      button {
+         border: none;
+         padding: 0 5px;
+         background-color: #333333;
+
+      }
+      .cart {
+         float: right;
+         border: none;
+         background-color: #00c8c8;
+         padding: 8.5px 20px;
+         margin:0;
+         text-align: center;
+         color: white;
+         font-family:Montserrat-Regular;
+      }
+      .select2 {
+         background-color: #00c8c8;
+         border: none;
+         color: white;
+
+      }
+      .header2-outer {
+         margin: auto;
+         background-color: #f8f8f8;
+         padding:10px 0;
+      }
+      .header2-container {
+         width:1200px;
+         margin:auto; 
+      }
+      ul {
+         list-style-type: none;
+      }
+      li {
+         float: left;         
+      }
+      .link {
+         padding-left: 500px;
+      }
+      li a {
+         text-decoration: none;
+         font-size: 13px;
+         color: #222222;
+         padding:5px 20px;
+         display: inline-block;
+         font-weight: bold;
+         font-family:Montserrat-Regular;
+      }
+      .header-logo {
+         display: block;
+         font-size: 15px;
+         font-family:Montserrat-Bold;
+         float: left;
+         margin: auto;
+      }
+      .nav-search {
+         width: 130px;
+         display: block;
+         float: right;
+         padding:5px;
+         border:1px solid #e7e7e7;
+      }
+      .fa-magnifying-glass {
+         position: relative;
+         left: 160px;
+         top: 5px;
+      }
+      .clear{
+            clear: both;
+      }
+      .container-image{
+         height:450px;
+         background: url('./assets/avenue-image.jpg') no-repeat;
+         background-size:100% 450px;
+      }
+      .color-box{
+         height: 450px;
+         background-color: #333333;
+         opacity: 0.5;
+      }
+      .text-box{
+         position: absolute;
+         top: 45%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 30px;
+         color: #ffffff;
+         font-family:Montserrat-Regular;
+         
+      }
+      span{
+           font-weight:bolder;
+           font-family:Montserrat-Bold;
+         
+      }
+      .container-image-link{
+         position: absolute;
+         top: 52%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 18px;
+         color:#ffffff;
+         text-decoration: none;
+         font-family:Montserrat-Regular;
+      }
+      .main-content-container{
+         width:auto;
+         height:auto;
+         padding-bottom: 60px;
+      }
+
+      .data-container{
+         width:800px;
+         height:auto;
+         margin:20px auto;
+
+      }
+      .section-left{
+         width:390px;
+         height:auto;
+         float:left;
+      }
+      .content-head{
+         margin-bottom: 25px;
+         padding-left: 5px;
+         color: #575153;;
+         font-size:20px;
+         font-family:Montserrat-Regular;
+      }
+      .email-pswd{
+         padding: 5px 220px 5px 5px;
+         margin-bottom:20px;
+         font-family:Montserrat-Regular;
+      }
+      .forget-pswd{
+         display:inline-block;
+         text-decoration:none;
+         color: #00c8c8;
+         padding-left: 130px;
+         font-family:Montserrat-Regular;
+         font-size: 13px;
+      }
+
+      .section-right{
+         width:390px;
+         height:auto;
+         float: right;
+         margin-right:auto;
+      }
+      .checkbox{
+         color: #333333;
+         font-size:10px;
+         font-family:Montserrat-Regular;
+
+      }
+      .reg-button{
+         padding: 10px 15px;
+         background-color: white;
+         color:  #454647;
+         font-family:Montserrat-Regular;
+         border: 1px solid black;
+         cursor: pointer;
+         float: left;
+         font-size: 16px;
+         font-weight:bold;
+         margin-top: 10px;
+      }
+      .privacy-policy{
+         float: right;
+         font-family:Montserrat-Regular;
+         font-size:13px;
+         margin-top: 10px;
+      }
+
+      .float-clear{
+         clear: both;
+      }      
+
+      .footer-container{
+       width:auto;
+       height:auto;
+       background-color: #f8f8f8;
+      }
+      .link-container{
+         width:800px;
+         margin:0 auto 30px auto;
+         padding-top: 30px;
+
+      }
+
+      .link-x{
+         float: right;
+         padding-left:12px;
+      }    
+
+      .l1{
+         display: block;
+         text-decoration: none;
+         color: #777777;
+      }
+      .l1:hover{
+         color: #00c8c8;
+      }
+      .link-heading{
+         padding-bottom: 20px;
+         font-family:Montserrat-Regular ;
+      }
+      .container-2{
+         width:800px;
+         margin:0 auto;
+         margin-bottom: 20px;
+      }
+      .black-box{
+         float: left;
+         background-color: #333333;
+         text-align: center;
+         color: white;
+         width:375px;
+         padding: 29px 0;
+         font-size: 25px;
+         margin-left:5px;
+      }
+      .social-media{
+         width: 375px;
+         float:right;
+         background-color: #00c8c8;
+         text-align: center;
+         padding: 30px 0;
+      }  
+      .social-media-link{
+         display: inline-block;
+         color: white;
+         margin: 10px 10px;
+         font-size:30px;
+      } 
+
+      .container-end-footer{
+         width:auto;
+         height: auto;
+         background-color: #333333;
+      }
+      
+      .footer-copyright{
+         width:970px;
+         margin:0 auto;
+         height: auto;
+         color: #999999;
+      }
+      .footer-text1{
+         float:left;
+         font-size: 20px;
+         margin-left: 25px;
+         padding: 10px 0;
+      }
+      .container-design-by{
+         float: right;
+         margin-right: 20px;
+      }
+     .design-text{
+        float: right;
+        font-size: 20px;
+        padding: 10px 40px;
+     }
+     .dev-text{
+        float: right;
+        font-size: 20px;
+        padding: 10px 0;
+     }
+     .link-hover-color:hover{
+        color: #00c8c8;
+
+     }
+
+
+
+   </style>
+</head>
+ 
+<body>
+   <div class="layout-header">
+      <div class="header1-outer">
+         <div class="header1-container">
+            <div class="currency">
+               <label>Currency:GBP</label>
+               <select class="select1"></select>
+            </div>
+
+            <div class="cart">
+               <label style="padding-right:auto;"><i class="fa-solid fa-cart-shopping"
+                     style="color:white; padding-right:10px;"></i>empty</label>
+               <select class="select2"> </select>
+            </div>
+
+            <div class="header1-sign-in">
+               <button style="color:#777777" ;>Register</button>
+               <button style="color:#00c8c8" ;>Sign In</button>
+            </div>
+         </div>
+      </div>
+      <div class="header2-outer">
+         <div class="header2-container">
+
+
+            <div class="header-logo">
+               <h3><b>AVENUE</b> FASHION</h3>
+            </div>
+
+            <div class="link">
+               <ul>  
+                  <li><a href=" " class="link-hover-color">Mens </a></li>
+                  <li><a href=" " class="link-hover-color">Womens </a></li>
+                  <li><a href=" " class="link-hover-color">The Brand </a></li>
+                  <li><a href=" " class="link-hover-color">Local Books </a></li>
+                  <li><a href=" " class="link-hover-color">Local Stories </a></li>           
+               </ul>
+            </div>
+
+            <div class="search">
+               <input class="nav-search" type="text" placeholder="Search.."><i class="fa-solid fa-magnifying-glass"
+                  style="color: #989898;"></i>
+                  <div class="clear"></div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container-image">
+    <div class="color-box">
+   </div>      
+         <div class="text-box">
+            <p><span>WELCOME</span> TO AVE</p>
+         </div> 
+         
+         <div>
+           <p><a href="" class="container-image-link" class="link-hover-color"> SIGN IN OR REGISTER</a> </p>
+         </div>             
+   </div>
+   
+   <div class="main-content-container">
+      <div class="data-container">
+      <div class="section-left">
+
+         <div class="content-head">
+            <h4>SIGN IN</h4>
+        </div>
+
+      
+         <input class="email-pswd" type="text" placeholder="Your Email">
+         <input class="email-pswd" type="password" placeholder="Password">
+
+         <div class="content-sign-in">
+            <button style="padding:10px 24px; background-color: #00c8c8; color: white;">SIGN IN</button>
+            <a href="" class="forget-pswd">Forget your Password
+               <i class="fa-solid fa-arrow-right-long">
+
+               </i>
+            </a>
+   
+         </div>
+
+      </div>
+
+      <div class="section-right">
+         <div class="content-head">
+            <h4>REGISTER</h4>
+         </div>
+
+         <div>
+            <input class="email-pswd" type="text" placeholder="Your Email">
+            <input class="email-pswd" type="password" placeholder="Password">
+            <input class="email-pswd" type="password" placeholder="Confirm Password">
+         </div>
+
+         <div class="checkbox">
+            <input type="checkbox">
+            <label for="">Sign up for exclusive update,discount,new arrivals, contests and more!</label>
+         </div>   
+            
+         
+         <div class="reg-create-acc">
+            <button class="reg-button">
+            Create Account
+            </button>
+
+            <div class="privacy-policy">
+            <p>
+               By clicking 'Create Account',you<br> agree to our 
+               <a href="" style="text-decoration: none; color: #00c8c8;font-size: 13px;" class="link-hover-color">
+                  Privacy Policy<i class="fa-solid fa-arrow-right-long" style="padding-left:5px ;"></i></a>
+            </p>
+            </div>
+            </div>
+          
+
+      </div>
+
+      <div class="float-clear"></div>
+
+      </div>
+   </div>
+   
+   <div class="footer-container">
+         <div class="link-container">
+            <div class="link-x">
+               <h5 class="link-heading">CONTACT DETAILS</h5>
+               <p style="color:#777777">
+                  Head office: Avenue Fashion.<br>
+                  180-182 Regent Street London.<br><br>
+
+                  Teleohone:0123-456-789<br>
+                  Email:support@yourwebsite.com
+               </p>              
+            </div>
+            <div class="link-x">
+               <h5 class="link-heading">LOOKBOOK</h5>
+               <a  href="" class="l1">Latest post</a>
+               <a href="" class="l1">Men's lookbook</a>
+               <a href="" class="l1">Women's lookbook</a>
+               <a href="" class="l1">Lookbooks RSS feed</a>
+               <a href="" class="l1">View ypur lookbook</a>
+               <a href="" class="l1">Delete your lookbook</a>
+            </div>            
+            <div class="link-x">
+               <h5 class="link-heading">YOUR ACCOUNT</h5>
+               <a  href="" class="l1">Sign in</a>
+               <a href="" class="l1">Register</a>
+               <a href="" class="l1">View cart</a>
+               <a href="" class="l1">View your lookbook</a>
+               <a href="" class="l1">Track an order</a>
+               <a href="" class="l1">Update information</a>
+            </div>            
+            <div class="link-x">
+               <h5 class="link-heading">WHY BUY FROM US</h5>
+               <a  href="" class="l1">Shipping & returns</a>
+               <a href="" class="l1">Secure shopping</a>
+               <a href="" class="l1">Testimonials</a>
+               <a href="" class="l1">Award winning</a>
+               <a href="" class="l1">Ethical trading</a>
+            </div>          
+            <div class="link-x">
+               <h5 class="link-heading">INFORMATION</h5>
+               <a href=""  class="l1">The brand</a>
+               <a href=""class="l1">Local stores</a>
+               <a href="" class="l1">Customer service</a>
+               <a href="" class="l1">Privacy & cookies</a>
+               <a href="" class="l1">Site map</a>
+            </div>
+           
+
+            <div class="clear"></div>
+         </div>
+         <div class="container-2">
+ 
+            <div class="social-media">
+                  <a href="" class="social-media-link" ><i class="fa-brands fa-facebook" style="color: white;"></i></a>
+                  <a href=""  class="social-media-link"><i class="fa-brands fa-twitter" style="color: white;"></i></a>
+                  <a href=""  class="social-media-link"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                  <a href=""  class="social-media-link"><i class="fa-brands fa-pinterest" style="color: white;"></i></a>
+            
+            </div>
+
+            <div class="black-box">
+               <h4 class="black-box-text">
+                  AWARD WINNER
+               </h4>
+               <p>
+                  FASHION AWARDS 2016
+               </p>
+            </div>
+  
+            <div class="clear">
+
+            </div>
+
+         </div>
+         <div class="container-end-footer">
+         <div class="footer-copyright">
+       
+            <div class="footer-text1">
+               <h6>
+                  <i class="fa-solid fa-copyright" style="color:#989898;"></i>
+                  2016 Avenue Fashion<i class="fa-solid fa-trademark" style="color:#999999; font-size:10px;"></i>
+               </h6>
+            </div>
+
+            <div class="container-design-by">
+               <div class="dev-text">
+                  <h6>Dev by Loremipsum.com</h6>
+               </div>
+
+               <div class="design-text">
+                  <h6>
+                     Design by RobbyDesigns.com
+                  </h6>
+               </div>
+            </div>
+            <div class="clear"></div>
+
+         </div>
+         </div>
+
+       </div>
+   
+   
+
+   <script src="/js/all.min.js"> </script>
+</body>
+
+</html>
